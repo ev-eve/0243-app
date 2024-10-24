@@ -11,3 +11,5 @@ Currently, two official plugins are available:
   uses [SWC](https://swc.rs/) for Fast Refresh
 
 собрать проект npm run dev
+
+проверить ошибки npm run lint

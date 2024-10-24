@@ -1,16 +1,37 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css'
+
+const Profile = () => {
+  return <h3>Страница с профилем</h3>;
+}
+const Friends = () => {
+  return <h3>Страница друзей</h3>;
+}
 
 function App() {
 
   return (
-    <>
-      <h1>Заголовок 1</h1>
-      <p className="read-the-docs">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, delectus quo et ducimus repellat deserunt, distinctio impedit tenetur sequi similique facere ipsum. Enim inventore asperiores animi, blanditiis ex mollitia soluta.
-      </p>
-    </>
+    <div className="container=fluid pl-5 pr-5">
+      <div className="row">
+        <div className="col-sm-4">
+          <div className="nav flex-column nav-pills">
+            <NavLink to="/" className="nav-link">Главная</NavLink>
+            <NavLink to="profile" className="nav-link">Профиль</NavLink>
+            <NavLink to="friends" className="nav-link">Друзья</NavLink>
+            <NavLink to="shop" className="nav-link">Магазин</NavLink>
+            <NavLink to="settings" className="nav-link">Настройки</NavLink>
+          </div>
+
+        </div>
+        <div className="col-sm-8">
+          <Routes>
+            <Route path='/' element={<h2>Выберите из меню слева</h2>}/>
+            <Route path='/profile' element={<Profile/>}/>
+            <Route path='/friends' element={<Friends/>}/>
+          </Routes>
+        </div>
+      </div>
+    </div>
   )
 }
 
