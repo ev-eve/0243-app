@@ -1,4 +1,15 @@
 
 export const Friends = () => {
-  return <h3>Страница друзей</h3>;
+  return (
+  <div className="container-fluid">
+<div className="row">
+  <h3>Список друзей</h3>
+  <p></p>
+
+
+</div>
+
+  </div>
+
+  );
 }
