@@ -7,8 +7,9 @@ const mailStyle = {
 }
 
 export const Profile = (props) => {
-  let user = props.function();
-  console.log(user);
+  let userId = window.location.pathname.split("/")[2];
+  let user = props.function(userId);
+  console.log(userId);
 
   return (
     <>
@@ -24,7 +25,7 @@ export const Profile = (props) => {
           <p style={mailStyle}>
             Email: <span>{user.email}</span>
           </p>
-          <p style={{color: "red", fontStyle: "italic", fontSize: 24}}>
+          <p style={{ color: "red", fontStyle: "italic", fontSize: 24 }}>
             Обо мне: <span>{user.about}</span>
           </p>
         </div>

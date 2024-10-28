@@ -9,7 +9,7 @@ import { Settings } from './components/Settings';
 
 
 function App(props) {
-console.log(props);
+  console.log(props);
   return (
     <div className="container=fluid pl-5 pr-5">
       <div className="row">
@@ -25,11 +25,11 @@ console.log(props);
         </div>
         <div className="col-sm-8">
           <Routes>
-            <Route path='/' element={<h2>Выберите из меню слева</h2>}/>
-            <Route path='/profile' element={<Profile function={props.functions.key_getUser}/>}/>
-            <Route path='/friends' element={<Friends function={props.functions.key_getUsers}/>}/>
-            <Route path='/shop' element={<Shop/>}/>
-            <Route path='/settings' element={<Settings/>}/>
+            <Route path='/' element={<h2>Выберите из меню слева</h2>} />
+            <Route path='/profile/*' element={<Profile function={props.functions.key_getUser} />} />
+            <Route path='/friends' element={<Friends function={props.functions.key_getUsers} />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/settings' element={<Settings />} />
           </Routes>
         </div>
       </div>
