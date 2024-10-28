@@ -13,3 +13,5 @@ Currently, two official plugins are available:
 собрать проект npm run dev
 
 проверить ошибки npm run lint
+
+собрать приложение на продакшн npm run build

@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
+import friendsImg from "../assets/img/img.webp";
+
 const TableRow = (props) => {
   return (
     <tr>
       <th scope="row">{props.index + 1}</th>
       <td>
-        <NavLink to={'/profile/' + props.id}>
-          {props.name} {props.lastname}
+        <NavLink to={"/profile/" + props.id}>
+          {props.name} {props.lastname} 123
         </NavLink>
       </td>
       <td> {props.email} </td>
@@ -34,6 +37,7 @@ export const Friends = (props) => {
         <div className="col-12">
           <h3>Список друзей</h3>
           <p>Дополнительная информация</p>
+          <img src={friendsImg} alt="" width="100%" />
         </div>
       </div>
       <div className="row">
