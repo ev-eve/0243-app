@@ -1,6 +1,6 @@
 .name {
   font-size: 2rem;
-  color: cadetblue
+  color: cadetblue;
 }
 
 .name span {
@@ -11,12 +11,12 @@
 }
 
 .id {
-  font-size: 1,8rem;
+  font-size: 1.8rem;
   color: red;
   margin-bottom: 1rem;
 }
 
-img {
+.img {
   max-width: 100%;
   height: auto;
 }

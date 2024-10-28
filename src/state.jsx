@@ -8,11 +8,11 @@ const user = {
 };
 
 const users = {
-  0: {name: "1", lastname: "1"},
-  1: {name: "2", lastname: "2"},
-  2: {name: "3", lastname: "3"},
-  3: {name: "4", lastname: "4"},
-  4: {name: "5", lastname: "5"},
+  0: { name: "Валерия", lastname: "Смирнова" },
+  1: { name: "Павел", lastname: "Николаев" },
+  2: { name: "Владислав", lastname: "Тетерин" },
+  3: { name: "Юлия", lastname: "Петрова" },
+  4: { name: "Ксения", lastname: "Иванова" },
 }
 
 export function getUser() {
